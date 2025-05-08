@@ -1,5 +1,10 @@
 import { NgClass } from '@angular/common';
-import { Component, computed, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  computed,
+  input,
+} from '@angular/core';
 
 interface Avatar {
   acronym: string;
@@ -10,6 +15,7 @@ interface Avatar {
 @Component({
   selector: 'mat-extra-avatar',
   imports: [NgClass],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div
       class="avatar"
