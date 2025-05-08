@@ -4,12 +4,8 @@ import { Component } from '@angular/core';
   selector: 'mat-extra-ngx-material-extra',
   imports: [],
   template: `
-    <p>
-      ngx-material-extra works!
-    </p>
+    <p>Hello world! This is the ngx-material-extra component. ✨</p>
   `,
-  styles: ``
+  styles: ``,
 })
-export class NgxMaterialExtraComponent {
-
-}
+export class NgxMaterialExtraComponent {}
