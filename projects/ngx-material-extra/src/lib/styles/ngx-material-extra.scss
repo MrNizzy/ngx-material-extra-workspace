@@ -1,0 +1,28 @@
+:root {
+  --mat-extra-sys-primary-container: #6200ea;
+  --mat-extra-sys-on-primary-container: #ffffff;
+
+  // Avatar sizes
+  --mat-extra-sys-avatar-small: 24px;
+  --mat-extra-sys-avatar-medium: 48px;
+  --mat-extra-sys-avatar-large: 72px;
+  --mat-extra-sys-avatar-extra-large: 96px;
+
+  // Border radius
+  --mat-extra-sys-corner-small: 8px;
+  --mat-extra-sys-corner-medium: 12px;
+  --mat-extra-sys-corner-large: 16px;
+  --mat-extra-sys-corner-extra-large: 24px;
+
+  // Shadows
+  --mat-extra-sys-level1: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  --mat-extra-sys-level2: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --mat-extra-sys-level3: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --mat-extra-sys-level4: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  --mat-extra-sys-level5: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
