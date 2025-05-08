@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "watch:lib": "ng build ngx-material-extra --watch",
+    "build:lib": "ng build ngx-material-extra",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
