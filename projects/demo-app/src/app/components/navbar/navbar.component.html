@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+
+  @for (item of navItems; track $index) {
+
+  <button
+    mat-button
+    [routerLink]="item.path"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: item.exact }"
+  >
+    <mat-icon>{{ item.icon }}</mat-icon>
+    {{ item.label }}
+  </button>
+  }
+
+  <a
+    mat-icon-button
+    href="https://github.com/yourusername/ngx-material-extra"
+    target="_blank"
+    aria-label="GitHub Repository"
+  >
+    <mat-icon>code</mat-icon>
+  </a>
+</mat-toolbar>

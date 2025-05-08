@@ -1,0 +1,23 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--mat-sys-primary-container);
+  color: var(--mat-sys-primary);
+}
+
+.active-link {
+  background-color: var(--mat-sys-primary-container);
+}
+
+button {
+  margin: 0 4px;
+}
+
+mat-icon {
+  margin-right: 4px;
+}
