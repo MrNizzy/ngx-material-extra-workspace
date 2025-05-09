@@ -8,7 +8,11 @@
     "watch:lib": "ng build ngx-material-extra --watch",
     "build:lib": "ng build ngx-material-extra",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "version:patch": "cd projects/ngx-material-extra && npm version patch",
+    "version:minor": "cd projects/ngx-material-extra && npm version minor",
+    "version:major": "cd projects/ngx-material-extra && npm version major",
+    "publish:lib": "npm run build:lib && cd dist/ngx-material-extra && npm publish"
   },
   "private": true,
   "dependencies": {

@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/ngx-material-extra.svg)](https://www.npmjs.com/package/ngx-material-extra)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Changelog](https://img.shields.io/badge/changelog-19.0.0-blue.svg)](../../CHANGELOG.md)
 
 Una biblioteca de componentes y utilidades adicionales para Angular Material. NgxMaterialExtra extiende las funcionalidades de Angular Material con componentes personalizados que mantienen la estética y experiencia de Material Design.
 
@@ -142,6 +143,16 @@ npm publish
 5. Haz commit de tus cambios (`git commit -m 'feat: añade funcionalidad increíble'`)
 6. Push a la rama (`git push origin feature/amazing-feature`)
 7. Abre un Pull Request
+
+## Changelog
+
+Mantenemos un registro detallado de los cambios en el archivo [CHANGELOG.md](../../CHANGELOG.md).
+
+La primera versión estable es la 19.0.0, que incluye:
+
+- Componente Avatar
+- Sistema de estilos personalizable
+- Compatibilidad con Angular 19.2.x
 
 ## Licencia
 

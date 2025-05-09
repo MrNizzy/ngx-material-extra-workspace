@@ -10,5 +10,22 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrNizzy/ngx-material-extra-workspace.git"
+  },
+  "keywords": [
+    "angular",
+    "material",
+    "components",
+    "ui",
+    "angular-material"
+  ],
+  "author": "MrNizzy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrNizzy/ngx-material-extra-workspace/issues"
+  },
+  "homepage": "https://github.com/MrNizzy/ngx-material-extra-workspace/tree/main/projects/ngx-material-extra#readme"
 }

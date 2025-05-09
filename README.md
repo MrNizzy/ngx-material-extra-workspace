@@ -3,6 +3,7 @@
 [![Angular](https://img.shields.io/badge/Angular-19.2.0-dd0031.svg)](https://angular.io/)
 [![npm version](https://badge.fury.io/js/ngx-material-extra.svg)](https://www.npmjs.com/package/ngx-material-extra)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Changelog](https://img.shields.io/badge/changelog-19.0.0-blue.svg)](./CHANGELOG.md)
 
 Un espacio de trabajo monorepo que contiene la biblioteca `ngx-material-extra` y una aplicación de demostración. Esta biblioteca proporciona componentes adicionales para Angular Material, extendiendo sus funcionalidades con componentes personalizados que mantienen la estética y experiencia de Material Design.
 
@@ -107,6 +108,16 @@ Para más detalles sobre todos los componentes disponibles y su uso, consulta el
 3. Realiza tus cambios
 4. Asegúrate de ejecutar las pruebas
 5. Envía un pull request
+
+## Changelog
+
+Mantenemos un registro detallado de los cambios en el archivo [CHANGELOG.md](./CHANGELOG.md).
+
+La primera versión estable es la 19.0.0, que incluye:
+
+- Componente Avatar
+- Sistema de estilos personalizable
+- Compatibilidad con Angular 19.2.x
 
 ## Licencia
 
