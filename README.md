@@ -1,59 +1,113 @@
-# NgxMaterialExtraWorkspace
+# NgxMaterialExtra Workspace
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+[![Angular](https://img.shields.io/badge/Angular-19.2.0-dd0031.svg)](https://angular.io/)
+[![npm version](https://badge.fury.io/js/ngx-material-extra.svg)](https://www.npmjs.com/package/ngx-material-extra)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Development server
+Un espacio de trabajo monorepo que contiene la biblioteca `ngx-material-extra` y una aplicación de demostración. Esta biblioteca proporciona componentes adicionales para Angular Material, extendiendo sus funcionalidades con componentes personalizados que mantienen la estética y experiencia de Material Design.
 
-To start a local development server, run:
+## Estructura del proyecto
 
-```bash
-ng serve
-```
+El workspace contiene dos proyectos principales:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **ngx-material-extra**: La biblioteca de componentes reutilizables
+- **demo-app**: Una aplicación Angular para demostrar y probar los componentes
 
-## Code scaffolding
+## Iniciar el servidor de desarrollo
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Para iniciar un servidor de desarrollo local con la aplicación de demostración, ejecuta:
 
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+Una vez que el servidor esté funcionando, abre tu navegador y navega a `http://localhost:4200/`. La aplicación se recargará automáticamente cuando modifiques cualquiera de los archivos fuente.
 
-To build the project run:
+## Desarrollo de la biblioteca
+
+Para trabajar en el desarrollo de la biblioteca mientras utilizas la aplicación de demostración, puedes usar el modo watch:
 
 ```bash
-ng build
+npm run watch:lib
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Este comando compilará la biblioteca y vigilará los cambios, actualizando la compilación automáticamente cuando modifiques algún archivo.
 
-## Running unit tests
+## Construir los proyectos
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Biblioteca
+
+Para construir solo la biblioteca:
 
 ```bash
-ng test
+npm run build:lib
 ```
 
-## Running end-to-end tests
+### Aplicación de demostración
 
-For end-to-end (e2e) testing, run:
+Para construir la aplicación de demostración:
 
 ```bash
-ng e2e
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Los artefactos de compilación se almacenarán en el directorio `dist/`. Por defecto, la compilación de producción optimiza tu aplicación para rendimiento y velocidad.
 
-## Additional Resources
+## Pruebas
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Ejecutando pruebas unitarias
+
+Para ejecutar las pruebas unitarias con [Karma](https://karma-runner.github.io), usa el siguiente comando:
+
+```bash
+npm test
+```
+
+## Publicación de la biblioteca
+
+Una vez que la biblioteca está lista para ser publicada, sigue estos pasos:
+
+1. Asegúrate de haber construido la última versión de la biblioteca:
+
+   ```bash
+   npm run build:lib
+   ```
+
+2. Navega al directorio de distribución:
+
+   ```bash
+   cd dist/ngx-material-extra
+   ```
+
+3. Publica en el registro de npm:
+   ```bash
+   npm publish
+   ```
+
+## Componentes disponibles
+
+Actualmente, la biblioteca incluye los siguientes componentes:
+
+### Avatar
+
+Un componente flexible para mostrar avatares con iniciales, que soporta diferentes tamaños y estilos de borde.
+
+```html
+<mat-extra-avatar acronym="JS" size="medium" border="medium"> </mat-extra-avatar>
+```
+
+Para más detalles sobre todos los componentes disponibles y su uso, consulta el [README de la biblioteca](./projects/ngx-material-extra/README.md).
+
+## Contribuir
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir:
+
+1. Fork el repositorio
+2. Crea tu rama de características
+3. Realiza tus cambios
+4. Asegúrate de ejecutar las pruebas
+5. Envía un pull request
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](./LICENSE) para más detalles.
