@@ -82,7 +82,7 @@ interface Avatar {
     }
   `,
 })
-export class AvatarComponent {
+export class MatExtraAvatar {
   public acronym = input<string>('Hola');
   public size = input<'small' | 'medium' | 'large' | 'extra-large'>('medium');
   public border = input<'extra-large' | 'large' | 'medium' | 'small' | 'none'>(

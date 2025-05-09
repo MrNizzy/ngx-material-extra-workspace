@@ -10,8 +10,9 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "ngx-material-extra": [
-        "./dist/ngx-material-extra"
+      "ngx-material-extra": ["./dist/ngx-material-extra"],
+      "@ngx-material-extra/*": [
+        "./projects/ngx-material-extra/src/lib/components/*"
       ]
     },
     "skipLibCheck": true,

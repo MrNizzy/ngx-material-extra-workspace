@@ -16,7 +16,7 @@ Una biblioteca de componentes y utilidades adicionales para Angular Material. Ng
 ## Instalación
 
 ```bash
-npm install ngx-material-extra --save
+npm i ngx-material-extra
 ```
 
 ### Requisitos previos
@@ -38,19 +38,19 @@ En tu archivo `styles.scss`:
 @import "@angular/material/prebuilt-themes/azure-blue.css";
 
 /* Luego importa los estilos de NgxMaterialExtra */
-@import "ngx-material-extra/lib/styles/ngx-material-extra.scss";
+@import "ngx-material-extra/src/lib/styles/ngx-material-extra.scss";
 ```
 
 ### 2. Importa los módulos que necesites en tu aplicación
 
 ```typescript
 // En tu módulo o componente standalone
-import { AvatarComponent } from 'ngx-material-extra';
+import { MatExtraAvatar } from 'ngx-material-extra';
 
 @NgModule({
   imports: [
     // ...
-    AvatarComponent
+    MatExtraAvatar
   ]
 })
 export class AppModule { }
@@ -58,7 +58,9 @@ export class AppModule { }
 // O si usas la API de componentes standalone
 @Component({
   // ...
-  imports: [AvatarComponent]
+  imports: [
+    MatExtraAvatar
+  ]
 })
 ```
 

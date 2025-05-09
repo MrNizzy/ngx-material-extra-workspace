@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { AvatarComponent } from './avatar.component';
+import { MatExtraAvatar } from './avatar.component';
 
 describe('AvatarComponent', () => {
-  let component: AvatarComponent;
-  let fixture: ComponentFixture<AvatarComponent>;
+  let component: MatExtraAvatar;
+  let fixture: ComponentFixture<MatExtraAvatar>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AvatarComponent],
+      imports: [MatExtraAvatar],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AvatarComponent);
+    fixture = TestBed.createComponent(MatExtraAvatar);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
