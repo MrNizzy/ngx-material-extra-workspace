@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --project demo-app",
-    "build": "ng build",
+    "build": "ng build --project demo-app",
     "watch:lib": "ng build ngx-material-extra --watch",
     "build:lib": "ng build ngx-material-extra",
     "watch": "ng build --watch --configuration development",
