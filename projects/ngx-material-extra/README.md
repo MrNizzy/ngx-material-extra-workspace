@@ -1,63 +1,152 @@
 # NgxMaterialExtra
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+[![npm version](https://badge.fury.io/js/ngx-material-extra.svg)](https://www.npmjs.com/package/ngx-material-extra)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Code scaffolding
+Una biblioteca de componentes y utilidades adicionales para Angular Material. NgxMaterialExtra extiende las funcionalidades de Angular Material con componentes personalizados que mantienen la estética y experiencia de Material Design.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Características
+
+- 🎨 **Totalmente personalizable**: Todos los componentes se adaptan a tu tema de Material Design.
+- 🎯 **Componentes adicionales**: Amplía tu conjunto de herramientas de Angular Material con componentes que no están incluidos en la biblioteca principal.
+- 🔧 **Fácil integración**: Diseñado para trabajar sin problemas con Angular y Angular Material.
+- 📱 **Responsive**: Todos los componentes están diseñados para funcionar en dispositivos móviles y de escritorio.
+
+## Instalación
 
 ```bash
-ng generate component component-name
+npm install ngx-material-extra --save
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Requisitos previos
 
-```bash
-ng generate --help
+NgxMaterialExtra requiere:
+
+- Angular v19.2.0 o superior
+- Angular Material v19.2.15 o superior
+- Angular CDK v19.2.15 o superior
+
+## Configuración rápida
+
+### 1. Importa los estilos
+
+En tu archivo `styles.scss`:
+
+```scss
+/* Importa los estilos de Angular Material primero */
+@import "@angular/material/prebuilt-themes/azure-blue.css";
+
+/* Luego importa los estilos de NgxMaterialExtra */
+@import "ngx-material-extra/lib/styles/ngx-material-extra.scss";
 ```
 
-## Building
+### 2. Importa los módulos que necesites en tu aplicación
 
-To build the library, run:
+```typescript
+// En tu módulo o componente standalone
+import { AvatarComponent } from 'ngx-material-extra';
+
+@NgModule({
+  imports: [
+    // ...
+    AvatarComponent
+  ]
+})
+export class AppModule { }
+
+// O si usas la API de componentes standalone
+@Component({
+  // ...
+  imports: [AvatarComponent]
+})
+```
+
+## Componentes disponibles
+
+### Avatar
+
+Un componente flexible de avatar que admite diferentes tamaños y bordes.
+
+```typescript
+<mat-extra-avatar acronym="JS" size="medium" border="medium"></mat-extra-avatar>
+```
+
+#### Propiedades
+
+| Nombre  | Tipo                                                      | Valor predeterminado | Descripción                                              |
+| ------- | --------------------------------------------------------- | -------------------- | -------------------------------------------------------- |
+| acronym | string                                                    | 'Hola'               | Texto a mostrar (se mostrarán los 2 primeros caracteres) |
+| size    | 'small' \| 'medium' \| 'large' \| 'extra-large'           | 'medium'             | Tamaño del avatar                                        |
+| border  | 'small' \| 'medium' \| 'large' \| 'extra-large' \| 'none' | 'medium'             | Radio del borde                                          |
+
+### Personalización de estilos
+
+NgxMaterialExtra define variables CSS para personalizar la apariencia de los componentes. Puedes sobrescribir estas variables en tu archivo de estilos principal:
+
+```scss
+:root {
+  --mat-extra-sys-primary-container: #your-color;
+  --mat-extra-sys-on-primary-container: #your-color;
+
+  /* Tamaños de avatar */
+  --mat-extra-sys-avatar-small: 24px;
+  --mat-extra-sys-avatar-medium: 48px;
+  --mat-extra-sys-avatar-large: 72px;
+  --mat-extra-sys-avatar-extra-large: 96px;
+
+  /* Radios de borde */
+  --mat-extra-sys-corner-small: 8px;
+  --mat-extra-sys-corner-medium: 12px;
+  --mat-extra-sys-corner-large: 16px;
+  --mat-extra-sys-corner-extra-large: 24px;
+}
+```
+
+## Desarrollo
+
+### Construyendo la biblioteca
+
+Para construir la biblioteca, ejecuta:
 
 ```bash
 ng build ngx-material-extra
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+Los artefactos de compilación se colocarán en el directorio `dist/`.
 
-### Publishing the Library
+### Ejecutando pruebas unitarias
 
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/ngx-material-extra
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Para ejecutar las pruebas unitarias:
 
 ```bash
-ng test
+ng test ngx-material-extra
 ```
 
-## Running end-to-end tests
+### Publicación
 
-For end-to-end (e2e) testing, run:
+Una vez construida la biblioteca, puedes publicarla siguiendo estos pasos:
 
 ```bash
-ng e2e
+cd dist/ngx-material-extra
+npm publish
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Contribuir
 
-## Additional Resources
+¡Las contribuciones son bienvenidas! Por favor, siente libre de enviar pull requests o abrir issues para mejorar esta biblioteca.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Fork el repositorio
+2. Crea tu rama de características (`git checkout -b feature/amazing-feature`)
+3. Realiza tus cambios
+4. Ejecuta las pruebas (`ng test ngx-material-extra`)
+5. Haz commit de tus cambios (`git commit -m 'feat: añade funcionalidad increíble'`)
+6. Push a la rama (`git push origin feature/amazing-feature`)
+7. Abre un Pull Request
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+
+## Contacto
+
+Si tienes preguntas o sugerencias, no dudes en abrir un issue en el repositorio del proyecto.
