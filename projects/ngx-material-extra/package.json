@@ -1,6 +1,6 @@
 {
   "name": "ngx-material-extra",
-  "version": "19.0.1",
+  "version": "19.1.0",
   "peerDependencies": {
     "@angular/cdk": "^19.2.15",
     "@angular/core": "^19.2.0",
